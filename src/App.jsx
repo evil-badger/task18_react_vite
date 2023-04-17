@@ -1,20 +1,21 @@
 import GridItem from "./components/GridItem"
 import SideNavItem from "./components/SideNavItem"
 import TopNavItem from "./components/TopNavItem"
+import classes from './navs.module.scss'
 
 const App = () => {
   return (
     <>
 
       <div className="wrap">
-        <div className="topnav">
-          <TopNavItem className="active" href="#home" title="Домой"/>
+        <div className={classes.topnav}>
+          <TopNavItem className={classes.active} href="#home" title="Домой"/>
           <TopNavItem href="#news" title="Новинки"/>
           <TopNavItem href="#contact" title="Контакты"/>
           <TopNavItem href="#customConditions" title="Для Юр Лиц"/>
         </div>
         <div className="sideAndMain">
-          <div className="sidenav">
+          <div className={classes.sidenav}>
             <SideNavItem href="#About" title="About"/>
             <SideNavItem href="#Services" title="Services"/>
             <SideNavItem href="#Clients" title="Clients"/>

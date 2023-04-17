@@ -1,5 +1,4 @@
 const GridItem = (props) => {
-    console.log(props);
     return (
         <div className="grid-item">
         <p className="grid-title">{props.title}</p>
@@ -7,9 +6,5 @@ const GridItem = (props) => {
       </div>
     )
   }
-
-
-
-
 
 export default GridItem
